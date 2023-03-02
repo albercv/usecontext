@@ -30,7 +30,8 @@ export const Login = () => {
   }
 
   return (
-    <div>Login
+    <div className='formMainDiv'>Login
+      <section className='formSection'>
       <form className='loginForm' onSubmit={saveData}>
         <div>
           <input type="text" name="name" placeholder='Name' />
@@ -48,6 +49,15 @@ export const Login = () => {
           <input type="submit" value="Log In" />
         </div>
       </form>
+      </section>
+      <section >
+        <div className='adviseSection'>
+          <h2>Datos de prueba</h2>
+          <p>Nombre: <strong>Alberto</strong></p>
+          <p>web: <strong>evolve2digital.com</strong></p>
+          <p>Password: <strong>1234</strong></p>
+        </div>
+      </section>
     </div>
   )
 }
